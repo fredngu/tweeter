@@ -17,12 +17,14 @@
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+    
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+
   </head>
 
   <body>
@@ -45,18 +47,17 @@
     </header>
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <h1>FAKE TWEETS</h1>
-      <h2>OKOKOKOKOKO</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>An ‘extremely credible source’ has called my office and told me that Barack Obama’s placeholder text is a fraud. You're telling the enemy exactly what you're going to do. No wonder you've been fighting Lorem Ipsum your entire adult life. Trump Ipsum is calling for a total and complete shutdown of Muslim text entering your website.
-
-        He’s not a word hero. He’s a word hero because he was captured. I like text that wasn’t captured. Some people have an ability to write placeholder text... It's an art you're basically born with. You either have it or you don't. If Trump Ipsum weren’t my own words, perhaps I’d be dating it.
-        
-        I have a 10 year old son. He has words. He is so good with these words it's unbelievable. I’m the best thing that ever happened to placeholder text.
-        
-        He’s not a word hero. He’s a word hero because he was captured. I like text that wasn’t captured. Look at that text! Would anyone use that? Can you imagine that, the text of your next webpage?!
-        
-        I’m the best thing that ever happened to placeholder text. The other thing with Lorem Ipsum is that you have to take out its family.</p>
+      <section class="new-tweet">
+        <form method="POST" action="/tweets" >
+          <label for="tweet-text"><h3>What are you humming about?</h3></label>
+          <textarea name="text" id="tweet-text"></textarea>
+          <div>
+            <button type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>
+      <script src="/scripts/composer-char-counter.js"></script>
     </main>
   </body>
 </html>
