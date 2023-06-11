@@ -1,7 +1,7 @@
 header {
-  padding-top: 130px;
+  padding-top: 150px;
   height: 520px;
-  width: 100%;
+  width: 100vw;
   display: flex;
   background-color: coral;
   background-image: url("/images/binding-light.png");
