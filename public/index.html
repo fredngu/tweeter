@@ -37,6 +37,7 @@
         <i class="fa-solid fa-angles-down" style="color: #c82828;" ></i>
       </div>
     </nav>
+    <!-- Header Showing Profile -->
     <header>
       <div>
           <img src="/images/profile-hex.png"> 
@@ -48,6 +49,7 @@
     </header>
     <!-- Page-specific (main) content here -->
     <main class="container">
+      <!-- Create new tweets container -->
       <section class="new-tweet">
         <form method="POST" action="/tweets" >
           <label for="tweet-text"><h3>What are you humming about?</h3></label>
@@ -58,7 +60,9 @@
           </div>
         </form>
       </section>
+      <!-- Script for character counter -->
       <script src="/scripts/composer-char-counter.js"></script>
+      <!-- Tweet Container -->
       <article class="tweet-container">
         <section class="tweet-header">
           <div class="display-name">

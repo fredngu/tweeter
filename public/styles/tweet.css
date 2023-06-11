@@ -9,7 +9,7 @@ article.tweet-container:hover{
   box-shadow: 10px 10px 5px #a3a3a3;
 }
 
-.tweet-header{
+article .tweet-header{
   font-size: 25px;
   display: flex;
   justify-content: space-between;
@@ -26,7 +26,7 @@ article .tweet-message{
   margin-bottom: 0px;
   border-bottom: 5px solid #545149;
 }
-.tweet-footer{
+article .tweet-footer{
   font-size: 20px;
   display: flex;
   justify-content: space-between;
@@ -34,20 +34,20 @@ article .tweet-message{
   padding: 0 5px 20px 5px;
 }
 
-.tweet-footer .tweet-date{
+article .tweet-footer .tweet-date{
   padding: 10px;
 }
 
-.tweet-footer .tweet-icons{
+article .tweet-footer .tweet-icons{
   font-size: 15px;
   padding: 10px 20px 0 0;
 }
 
-.tweet-footer .tweet-icons i{
+article .tweet-footer .tweet-icons i{
   color: #3e546a;
   padding-right: 1em;
 }
 
-.tweet-footer .tweet-icons i:hover{
+article .tweet-footer .tweet-icons i:hover{
   color: #756310;
 }
