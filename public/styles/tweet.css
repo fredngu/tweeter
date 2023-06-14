@@ -1,32 +1,60 @@
-article.tweet-container{
+#tweets-container {
   width: 100%;
+  display:flex;
+  background-color:#f4f1ec;
+  font-family: sans-serif;
+  flex-direction: column;
+  justify-content: column;
+}
+
+.tweets{
+  width: 90%;
   margin: 5%;
   border: 5px solid #545149;
-  padding: 5px;
-}
-
-article.tweet-container:hover{
-  box-shadow: 10px 10px 5px #a3a3a3;
-}
-
-article .tweet-header{
-  font-size: 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   padding: 10px;
 }
 
-article .tweet-message{
+.tweets:hover{
+  box-shadow: 10px 10px 5px #a3a3a3;
+}
+
+.tweet-header{
   display: flex;
+  flex-direction: row;
+  font-size: 25px;
+  justify-content: space-between;
   align-items: center;
-  font-size: 28px;
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.user-avatar {
+  display: flex;
+}
+
+.user-name {
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+.user-handle {
+  color:#3e546a;
+}
+
+.tweet-message{
+  display: flex;
+  align-items: flex-end;
   height: 100px;
+  width: 100%;
   padding: 10px;
   margin-bottom: 0px;
   border-bottom: 5px solid #545149;
 }
-article .tweet-footer{
+.tweet-footer{
   font-size: 20px;
   display: flex;
   justify-content: space-between;
@@ -34,20 +62,20 @@ article .tweet-footer{
   padding: 0 5px 20px 5px;
 }
 
-article .tweet-footer .tweet-date{
+.tweet-footer .tweet-date{
   padding: 10px;
 }
 
-article .tweet-footer .tweet-icons{
+.tweet-footer .tweet-icons{
   font-size: 15px;
-  padding: 10px 20px 0 0;
+  padding-top: 10px
 }
 
-article .tweet-footer .tweet-icons i{
+.tweet-footer .tweet-icons i{
   color: #3e546a;
   padding-right: 1em;
 }
 
-article .tweet-footer .tweet-icons i:hover{
+.tweet-footer .tweet-icons i:hover{
   color: #756310;
 }
