@@ -6,6 +6,7 @@
 
 //Functions for tweets
 const renderTweets = function(tweets) {
+  $('#tweets-container').empty();
   for (keys in tweets) {
     const $newTweet = createTweetElement(tweets[keys]);
     $('#tweets-container').prepend($newTweet)
@@ -62,8 +63,9 @@ $(document).ready(function() {
       $.ajax({
         method: 'POST',
         data: serializedData,
-        url: '/tweets'
-      }) .then((response) => loadTweets())
+        url: '/tweets',
+        success: loadTweets()
+      })
     }
   });
 });
