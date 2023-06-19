@@ -1,15 +1,17 @@
 #tweets-container {
   width: 100%;
-  display:flex;
+  display: flex;
   background-color:#f4f1ec;
   font-family: sans-serif;
   flex-direction: column;
-  justify-content: column;
+  justify-content: center;
 }
 
 .tweets{
   width: 90%;
-  margin: 5%;
+  margin-top: 50px;
+  margin-left: 5%;
+  margin-right: 5%;
   border: 5px solid #545149;
   padding: 10px;
 }
@@ -45,16 +47,18 @@
   color:#3e546a;
 }
 
-.tweet-message{
+.tweet-message {
   display: flex;
-  align-items: flex-end;
-  height: 100px;
+  align-items: center;
+  height: 110px;
   width: 100%;
   padding: 10px;
   margin-bottom: 0px;
   border-bottom: 5px solid #545149;
+  word-break: break-word;
 }
-.tweet-footer{
+
+.tweet-footer {
   font-size: 20px;
   display: flex;
   justify-content: space-between;
