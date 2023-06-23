@@ -2,6 +2,7 @@
   background-color: #f4f1ec;
   width: 90vw;
   justify-content: center;
+  flex-direction: column;
 }
 
 .counter {
@@ -26,4 +27,14 @@ button {
 #new-tweet div{
   display: flex;
   justify-content: space-between;
+}
+
+#error-message {
+  display: flex;
+  border: solid red;
+  font-size: 50px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  color: red;
 }

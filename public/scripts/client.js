@@ -14,6 +14,12 @@ const renderTweets = function(tweets) {
   return;
 }
 
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
 const createTweetElement = function(tweetObj) {
   let $tweet = (`
     <article class="tweets">
@@ -26,7 +32,7 @@ const createTweetElement = function(tweetObj) {
           <h4>${tweetObj.user.handle}</h4>
         </div>
       </header>
-      <section class="tweet-message">${tweetObj.content.text}</section>
+      <section class="tweet-message">${escape(tweetObj.content.text)}</section>
       <footer class="tweet-footer">
         <div class="tweet-date">${timeago.format(new Date(tweetObj.created_at))}</div>
         <div class="tweet-icons">
@@ -51,14 +57,17 @@ const loadTweets = function() {
 
 $(document).ready(function() {
   loadTweets()
-
+  $('#error-message').hide();
   $("#submit-tweet").submit(function(event) {
     event.preventDefault();
     const serializedData = $(this).serialize();
     if ($('#tweet-text').val() === "" || null) {
-      return alert("Tweet is blank.");
+      $('#error-message').slideDown("slow");
+      $('#error-message').html(`!! Error: Tweet Cannot Be Blank !!`);
+      return 
     } else if ($('#tweet-text').val().length > 140) {
-      return alert("Tweet exceeds character limit.");
+      $('#error-message').slideDown("slow");
+      $('#error-message').html(`!! Error: Tweet Exceeds Character Limit !!`);
     } else {
       $.ajax({
         method: 'POST',
