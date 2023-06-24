@@ -16,7 +16,7 @@ Tweeter was made to practice and present HTML, CSS, JS, jQuery and AJAX front-en
 ![Error](https://github.com/fredngu/tweeter/assets/125424601/dd1ccfd6-a3ca-46c8-9736-a2ea33a6b30f)
 
 ### Changing screen sizes
-![Adapt to Smaller Screen Size](https://github.com/fredngu/tweeter/assets/125424601/b0c09319-fe3d-4170-9cb0-76bdaa4ad96e)
+![Change screen size](https://github.com/fredngu/tweeter/assets/125424601/fb7f18cb-ca67-4c85-8f68-37fa8f37996a)
 
 ## Getting Started
 
