@@ -1,3 +1,4 @@
+/* Container of all tweets */
 #tweets-container {
   width: 100%;
   display: flex;
