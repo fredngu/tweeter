@@ -40,7 +40,7 @@ main {
   background-color: #f4f1ec;
  }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   body {
     flex-direction: column;
     flex-wrap: wrap;

@@ -19,7 +19,7 @@
   background-color: #f4f1ec;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   header.profile-header {
     height: 100%;
     margin: 0px;
