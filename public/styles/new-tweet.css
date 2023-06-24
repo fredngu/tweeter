@@ -1,8 +1,8 @@
 #new-tweet {
   background-color: #f4f1ec;
-  width: 90vw;
   justify-content: center;
   flex-direction: column;
+  width: 90%;
 }
 
 .counter {
@@ -24,7 +24,7 @@ button {
   font-family: 'Bungee', cursive;
 }
 
-#new-tweet div{
+#new-tweet .tweet-button-counter{
   display: flex;
   justify-content: space-between;
 }
@@ -38,3 +38,15 @@ button {
   align-items: center;
   color: red;
 }
+
+/* @media (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+  nav {
+    display: flex;
+    align-self: flex-start;
+  }
+} */
+

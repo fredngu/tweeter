@@ -2,10 +2,9 @@ nav {
   height: 120px;
   width: 100%;
   color: #FFFFFF;
-  background-color: coral;
-  background-image: url("/images/binding-light.png");
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  background-color: #3a56a6;
+  padding-left: 30px;
+  padding-right: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,4 +20,12 @@ nav {
 span {
   padding-top: 0.25em;
   font-family: 'Bungee', cursive;
+}
+
+@media (max-width: 768px) {
+  nav {
+    background-color: coral;
+    background-image: url("/images/binding-light.png");
+    position: relative;
+  }
 }
