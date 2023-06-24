@@ -42,8 +42,8 @@ main {
 
 @media screen and (max-width: 768px) {
   body {
-    display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
   }
   main {
     margin: 0;

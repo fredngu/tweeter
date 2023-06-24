@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  console.log( "ready!" );
   $("#tweet-text").on('input', function() {
     let count = $(this).val().length;
     let counterElement = $(this).parentsUntil('.new-tweet').find('.counter');

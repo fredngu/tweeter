@@ -24,8 +24,8 @@ span {
 
 @media (max-width: 768px) {
   nav {
-    background-color: coral;
-    background-image: url("/images/binding-light.png");
+    background-color: #CE94E4;
+    background-image: url("/images/diagmonds-light.png");
     position: relative;
   }
 }
